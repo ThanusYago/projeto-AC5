@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Quantum Computer</title>
 </head>
@@ -27,7 +26,7 @@
     <div>
         <header>
 
-            <img class="logo" src="img/Qiskit.JPG" alt="Logo do Qiskit" style="width: 100px; height: 100px;">
+            <img src="{{ url_for('static', filename='img/Qiskit.JPG') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
 
             <!-- logo -->
 
@@ -69,7 +68,7 @@
             <h2>Ingressar na área de computação quântica é empolgante, mas requer um pouco de preparação.
             </h2>
             <div class="project-secction">
-                <img src="img\computacao-quantica-1200x900.jpg" alt="Projeto 1">
+                <img src="{{ url_for('static', filename='img\computacao-quantica-1200x900.jpg') }}" alt="Descripción de la imagen">
                 <div class="topic">
                     <h2>Educação e Habilidades: </h2>
                     <p class="fonte18">Fundações em Matemática e Física: Uma boa compreensão de álgebra linear, cálculo, teoria dos números e mecânica quântica é fundamental. Programação: Conhecimento em linguagens como Python é útil. Familiarize-se com conceitos básicos
