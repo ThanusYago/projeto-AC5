@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Quantum Computer</title>
 </head>
@@ -25,17 +25,17 @@
 
     <div>
         <header>
-
             <img src="{{ url_for('static', filename='img/Qiskit.JPG') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
 
             <!-- logo -->
 
             <div class="cabeçalho-link" class="navbar" id="navbar">
                 <ul>
-                    <li><a href="intro.html">Introdução</a></li>
-                    <li><a href="aplication.html">Aplicações</a></li>
-                    <li><a href="ingresso.html">Como Ingressar</a></li>
-                    <li><a href="ingresso.html">Matematica da Computação Quântica</a></li>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/application">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica da Computação Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
                     <a href="#contato">
                         <button>Contato</button>
                     </a>
@@ -69,6 +69,7 @@
             </h2>
             <div class="project-secction">
                 <img src="{{ url_for('static', filename='img\computacao-quantica-1200x900.jpg') }}" alt="Descripción de la imagen">
+
                 <div class="topic">
                     <h2>Educação e Habilidades: </h2>
                     <p class="fonte18">Fundações em Matemática e Física: Uma boa compreensão de álgebra linear, cálculo, teoria dos números e mecânica quântica é fundamental. Programação: Conhecimento em linguagens como Python é útil. Familiarize-se com conceitos básicos
