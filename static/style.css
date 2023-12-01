@@ -7,7 +7,8 @@ body {
 }
 
 body.fixed .cabeçalho-link {
-    
+            cursor: pointer;
+
     position: fixed;
     width: 100vw; /* Alterado para 100vw */
     top: 0;
@@ -337,15 +338,6 @@ button:hover {
         padding-top: 50px; /* Ajuste conforme necessário */
     }
     
-    .cabeçalho-link li {
-        margin-right: 0; /* Remova a margem à direita em dispositivos móveis */
-        margin-bottom: 10px; /* Adicione um espaçamento inferior entre os itens */
-    }
-
-    .cabeçalho-link ul {
-        flex-direction: column; /* Empilhe os itens em dispositivos móveis */
-        text-align: center; /* Centralize o texto */
-    }
     
     body {
         padding: 20px;
