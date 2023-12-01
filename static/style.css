@@ -30,6 +30,11 @@ body {
     border: solid 3px rgb(12, 72, 235);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 section {
     display: block;
     padding: 100px;
@@ -75,6 +80,12 @@ header {
     color: #fff;
     padding: 1px;
     margin-bottom: 20px;
+}
+
+.cabeçalho-link {
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
 
 .cabeçalho-link ul {
