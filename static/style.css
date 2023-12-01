@@ -323,6 +323,26 @@ button:hover {
         padding: 15px;
         margin: 10px;
     }
+
+    body.fixed .cabeçalho-link {
+        width: 100%; /* Define a largura para 100% em telas menores */
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    body.fixed {
+        padding-top: 50px; /* Ajuste conforme necessário */
+    }
+    
+    .cabeçalho-link li {
+        margin-right: 0; /* Remova a margem à direita em dispositivos móveis */
+        margin-bottom: 10px; /* Adicione um espaçamento inferior entre os itens */
+    }
+
+    .cabeçalho-link ul {
+        flex-direction: column; /* Empilhe os itens em dispositivos móveis */
+        text-align: center; /* Centralize o texto */
+    }
     
     body {
         padding: 20px;
@@ -336,6 +356,7 @@ button:hover {
         padding: 10px;
         margin: 10px;
         border: 1px solid rgb(12, 72, 235);
+        
     }
     .project-secction {
         padding: 10px;
