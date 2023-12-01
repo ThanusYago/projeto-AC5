@@ -8,9 +8,9 @@ app = Flask(__name__)
 def static_files(filename):
     return send_from_directory('static', filename)
 
-@app.route('/aplication')
+@app.route('/application')
 def application():
-    return render_template('aplication.html')
+    return render_template('application.html')
 
 @app.route('/ingresso')
 def ingresso():
