@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Quantum Computer</title>
 </head>
@@ -27,17 +26,17 @@
     <div>
         <header>
 
-            <img class="logo" src="img/Qiskit.JPG" alt="Logo do Qiskit" style="width: 100px; height: 100px;">
+            <img src="{{ url_for('static', filename='img/Qiskit.JPG') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
 
             <!-- logo -->
 
             <div class="cabeçalho-link" class="navbar" id="navbar">
                 <ul>
-                    <li><a href="intro.html">Introdução</a></li>
-                    <li><a href="aplication.html">Aplicações</a></li>
-                    <li><a href="ingresso.html">Como Ingressar</a></li>
-                    <li><a href="mat.html">Matematica Quântica</a></li>
-                    <li><a href="Qiskit.html">Qiskit</a></li>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/application">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
                     <a href="#contato">
                         <button>Contato</button>
                     </a>
@@ -56,8 +55,7 @@
             <h2>A computação quântica tem o potencial de impactar muitos setores e indústrias, trazendo avanços significativos em diversas áreas</h2>
             <section class="project-secction" class="content" id="section1">
 
-
-                <img src="img\computação quantica 1.jpg" alt="Projeto 1">
+                <img src="{{ url_for('static', filename='img/computação quantica 1.jpg') }}" alt="Descripción de la imagen">
                 <div class="topic">
                     <h2>Criptografia e Segurança: </h2>
                     <p class="fonte18">O algoritmo de Shor para fatorar números inteiros grandes, essencial para a criptografia, é um exemplo significativo de aplicação prática da computação quântica.
@@ -91,7 +89,7 @@
         <h2>Estudos de Caso e Exemplos
         </h2>
         <div class="project-secction">
-            <img src="img\computacao-quantica.webp" alt="Projeto 1">
+            <img src="{{ url_for('static', filename='img\computacao-quantica.webp') }}" alt="Descripción de la imagen">
             <!-- Tópico 1 -->
             <div class="topic">
                 <h2>Fatoração de Números: </h2>
