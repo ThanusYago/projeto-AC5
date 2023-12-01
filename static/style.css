@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    font-size: 16px;
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,6 +229,7 @@ button:hover {
 }
 
 .project-secction img {
+    border-radius: 10%;
     display: flex;
     border: solid 3px rgb(12, 72, 235);
     margin: 20px;
@@ -250,6 +252,7 @@ button:hover {
 }
 
 .project-secction2 img {
+    border-radius: 10%;
     display: flex;
     border: solid 3px rgb(12, 72, 235);
     margin: 20px;
@@ -304,6 +307,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     body {
         padding: 20px;
+        font-size: 14px;
         /* Reduza o preenchimento */
     }
     header {
