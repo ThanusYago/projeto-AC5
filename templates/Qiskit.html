@@ -28,17 +28,15 @@
     <div>
         <header>
             <img src="{{ url_for('static', filename='img/Qiskit.JPG') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
-
-        
             <!-- logo -->
 
             <div class="cabeçalho-link" class="navbar" id="navbar">
                 <ul>
-                    <li><a href="index.html">Introdução</a></li>
-                    <li><a href="aplication.html">Aplicações</a></li>
-                    <li><a href="ingresso.html">Como Ingressar</a></li>
-                    <li><a href="mat.html">Matematica da Computação Quântica</a></li>
-                    <li><a href="Qiskit.html">Qiskit</a></li>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/aplication">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica da Computação Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
                     <li><a href="#contato"><button>Contato</button></a></li>
                 </ul>
             </div>
@@ -82,6 +80,7 @@
         <h2>Plataforma IBM</h2>
         <div class="project-secction">
             <img src="{{ url_for('static', filename='img/dash.png') }}" alt="Descripción de la imagen">
+
             <h3>Primeiro contato</h3>
             <p> Acesse o link https://quantum-computing.ibm.com/ e registre-se. </p>
             <br>
@@ -98,6 +97,7 @@
         <h2>Plataforma IBM</h2>
         <div class="project-secction">
             <img src="{{ url_for('static', filename='img/pynote.png') }}" alt="Descripción de la imagen">
+
             <h3>IBM Quantum Lab</h3>
             <p> Cliclaremos na Opção Python3(ipkernel) Python notebook, para codar na pratica. </p>
             <br>
@@ -105,6 +105,7 @@
             <br>
             <br>
             <img src="{{ url_for('static', filename='img/import.png') }}" alt="Descripción de la imagen">
+
             <p>Importando o necessario para nosso experimento:</p>
             <p class="red">
                 from qiskit import *
@@ -149,6 +150,7 @@
                     </p>
                     <br>
                     <img src="{{ url_for('static', filename='img/had1.jpg') }}" alt="Descripción de la imagen">
+
                     <br>
                     <p>Agora usaremos outra porta lógica Quântica chamada Controlled-Not, É como um if. Sendo o primeiro qubit o controle e o segundo a operação:</p>
                     <p class="red">
@@ -160,7 +162,8 @@
                     <p class="red">
                         circuit.draw()
                     </p>
-                    <img src="{{ url_for('static', filename='img/cnot.jpg') }}" alt="Descripción de la imagen">    
+                    <img src="{{ url_for('static', filename='img/cnot.jpg') }}" alt="Descripción de la imagen">
+
                     <br>
                     <p>Por estarmos em um espaço mátematico, podemos mensurar os valroes de nosso circuitoe assim o faremos</p>
                     <p>Medida do Qbit, armazenando o bit clássico(criando as medidas):</p>
@@ -186,6 +189,7 @@
                     </p>
                     <br>
                     <img src="{{ url_for('static', filename='img/simulator.png') }}" alt="Descripción de la imagen">
+                
                     <br>
                     <p>Exectado com:</p>
                     <p class="red">
@@ -202,9 +206,11 @@
                         plot_histogram(result.get_counts(circuit)) ou com tituto plot_histogram(result.get_counts(circuit), tittle = 'titulo do histogram')
                     </p>
                     <img src="{{ url_for('static', filename='img/add title.png') }}" alt="Descripción de la imagen">
+
                     <br>
                     <p>Plote de nosso Histograma, podemos ver que nessa simulação houveram aproximadamente 50% de resultados resultantes em ambos os Qubits:</p>
                     <img src="{{ url_for('static', filename='img/plots.png') }}" alt="Descripción de la imagen">
+
                     <br>
 
                     <p>Para fins de comparação agora carregaremos nosso circuito para um hardware de veracidade Quântico:</p>
@@ -237,6 +243,7 @@
             </p>
             <br>
             <img src="{{ url_for('static', filename='img/jobq.png') }}" alt="Descripción de la imagen">
+
             <br>
             <p>Importando o monitoramento e rodando o job:</p>
             <br>
@@ -255,6 +262,7 @@
             </p>
             <br>
             <img src="{{ url_for('static', filename='img/plotq.png') }}" alt="Descripción de la imagen">
+
             <p>Podemos ver que há sim uma diferença entre o expimento em simulação e expimento em maquina Quântica.</p>
             <br>
             <p>Portanto podemos concluir que a tecnologia esta em desenvolvimento e será necessarios algoritmos de correção.</p>
