@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
 }
+body {
+    padding-top: 80px; /* Ajuste conforme necessário */
+    margin: 0;}
 
 body.fixed .cabeçalho-link {
     position: fixed;
-    width: 100%;
+    width: 100vw; /* Alterado para 100vw */
     top: 0;
     z-index: 1000;
 }
