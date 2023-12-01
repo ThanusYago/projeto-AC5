@@ -231,7 +231,7 @@ button:hover {
     /* Torna a seção um contêiner flexível */
     flex-direction: column;
     /* Organiza os elementos verticalmente */
-    padding: 100px;
+    padding: 30px;
     margin: 20px;
     border: solid 3px rgb(12, 72, 235);
     border-radius: 30px;
@@ -302,7 +302,7 @@ button:hover {
     border-radius: 10px;
     flex: 1;
     /* Faz com que as colunas ocupem a mesma largura */
-    padding: 10px;
+    padding: 20px;
     /* Adicione preenchimento interno para separação */
     border: 3px solid rgb(12, 72, 235);
     /* Adicione bordas para separação visual */
@@ -320,7 +320,7 @@ button:hover {
     .column,
     .project-secction,
     .margen-class {
-        padding: 10px;
+        padding: 15px;
         margin: 10px;
     }
     
