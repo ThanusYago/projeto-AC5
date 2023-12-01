@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Quantum Computer</title>
 </head>
@@ -27,7 +26,7 @@
     <div>
         <header>
 
-            <img class="logo" src="img/Qiskit.JPG" alt="Logo do Qiskit" style="width: 100px; height: 100px;">
+            <img src="{{ url_for('static', filename='img/Qiskit.JPG') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
 
             <!-- logo -->
 
@@ -76,29 +75,7 @@
                     online
                 </h3>
                 <div class="project-secction">
-                    <img src="img\mecânica-quantica-2.jpg" alt="Projeto 1">
-                    <!DOCTYPE html>
-                    <html>
-
-                    <head>
-                        <title>Tópicos em HTML</title>
-                        <style>
-                            /* Estilos simples para os tópicos */
-                            
-                            .topic {
-                                margin-bottom: 20px;
-                                padding: 10px;
-                                border: 1px solid #ccc;
-                            }
-                            
-                            h2 {
-                                color: #e5dede;
-                            }
-                        </style>
-                    </head>
-
-                    <body>
-
+                    <img src="{{ url_for('static', filename='img\mecânica-quantica-2.jpg') }}" alt="Descripción de la imagen"
                         <!-- Tópico 1 -->
                         <div class="topic">
                             <h2>Álgebra Linear: </h2>
