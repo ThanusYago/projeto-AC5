@@ -304,7 +304,7 @@ button:hover {
     border-radius: 10px;
     flex: 1;
     /* Faz com que as colunas ocupem a mesma largura */
-    padding: 50px;
+    padding: 20px;
     /* Adicione preenchimento interno para separação */
     border: 3px solid rgb(12, 72, 235);
     /* Adicione bordas para separação visual */
@@ -333,11 +333,6 @@ button:hover {
         top: 0;
         z-index: 1000;
     }
-    body.fixed {
-        padding-top: 50px; /* Ajuste conforme necessário */
-    }
-    
-    
     body {
         padding: 20px;
         font-size: 14px;
@@ -362,8 +357,5 @@ button:hover {
     #about {
         display: flex;
         flex-direction: column;
-    }
-    .column {
-        width: 100%; /* Coluna ocupa a largura total */
     }
 }
