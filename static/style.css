@@ -10,7 +10,7 @@ body.fixed .cabeçalho-link {
     position: fixed;
     width: 100vw; /* Alterado para 100vw */
     top: 0;
-    z-index: 1000
+    z-index: 1000;
     
 }
 
@@ -181,12 +181,6 @@ label {
     margin: 20px 0;
 }
 
-.redes-social a {
-    text-decoration: none;
-    color: #0909fa;
-    font-size: 24px;
-    margin: 0 10px;
-}
 
 button {
     color: #0909fa;
@@ -321,6 +315,15 @@ button:hover {
 /* Exemplo de media query para dispositivos móveis */
 
 @media screen and (max-width: 768px) {
+     body,
+    header,
+    .column,
+    .project-secction,
+    .margen-class {
+        padding: 10px;
+        margin: 10px;
+    }
+    
     body {
         padding: 20px;
         font-size: 14px;
@@ -340,5 +343,12 @@ button:hover {
     }
     .project-secction img {
         border: 1px solid rgb(12, 72, 235);
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        width: 100%; /* Coluna ocupa a largura total */
     }
 }
